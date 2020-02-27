@@ -8,23 +8,19 @@ color: #2e4857;
   line-height: 1.5;
   font-size: 18px;
 }
-/* .widget-title{ color: #2e4857;font-weight: 600; margin-bottom: 25px; } */
+
 .menu-explore-categories-container ul,
-.menu-hfm-blog-container ul{
-  list-style-type: none;
-  padding: 0;
-}
+.menu-hfm-blog-container ul{ list-style-type: none; padding: 0; }
 .menu-explore-categories-container ul > li > a,
 .menu-hfm-blog-container ul > li > a{
   color: #262626;
   font-family: 'Noto Serif SC';
   font-size: 22px;
-  color: #fff;
-  /* font-family: 'Montserrat'; */
+  color: #ffffff;
 }
 
 /* Add these styles to so-css*/
-
+.widget-title{ margin-bottom: 25px; }
 .menu-explore-container ul{
   list-style-type: none;
   padding: 0;
@@ -41,7 +37,6 @@ color: #2e4857;
   color: #262626;
   font-family: 'Noto Serif SC';
   font-size: 22px;
-  /* font-family: 'Montserrat'; */
 }
 .menu-explore-container ul > li > a:hover{ text-decoration: none;}
 .menu-explore-container ul > li > a:focus{ text-decoration: none; outline: none;}
@@ -76,6 +71,9 @@ color: #2e4857;
     margin-top: 0;
     color: #2e4857;
 }
+.article-list.three-list .article-content .article-link:hover{
+  text-decoration-color: #2e4857;
+}
 .article-list.three-list .article-date{
   color: #8a8282;
   font-family: 'Montserrat';
@@ -99,13 +97,14 @@ color: #2e4857;
 
 /* Social Icons */
 .social-icons{
-  padding: 26.5px 4px;
+  padding: 10px 0;
 }
 .social-icons > a {
   display: inline-block;
   padding-left: 8px;
   line-height: 27px;
 }
+.social-icons :first-child{ padding-left: 0; }
 
 /* Fontawesome */
 .social-icons > a > i{
@@ -120,6 +119,53 @@ color: #2e4857;
   color: #fff;
 }
 
+/* Logo */
+.header3 .logo img{
+  max-width: 50px;
+  width: 100%;
+}
+.header3 .navbar-default .navbar-brand{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* Logo */
+
+/* Footer Subscribe Section */
+.hbspt-form .actions input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 5px;
+  background: #f5b948;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+}
+.hbspt-form .hs_email{ margin-bottom: 20px;}
+.hbspt-form .hs_email label{
+  font-size: 18px;
+  color: #fff;
+}
+.hbspt-form .hs_email input[type=email]{
+  width: 100%;
+  border: 1px solid #f5b948;
+  height: 40px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.hbspt-form .hs_email input[type=email]:focus{ outline: none; }
+.hbspt-form .hs_email .hs-error-msgs{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.hbspt-form .hs_email .hs-error-msg{
+  font-size: 15px;
+}
+/* Footer Subscribe Section */
+
 /* Orbit three column grid */
 @media (min-width: 769px){
   .article-list.three-list {
@@ -130,4 +176,13 @@ color: #2e4857;
 }
 @media( max-width: 768px ){
   .article-list.three-list .orbit-article{ margin-bottom: 30px;}
+  /* logo */
+  .header3 .navbar-default .navbar-brand{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  /* logo */
+}
+@media only screen and (max-width: 768px) and (min-width: 768px){
+  .navbar>.container .navbar-brand{ margin-left: 0; }
 }

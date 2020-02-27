@@ -15,7 +15,7 @@
   }
 ?>
 <div class="article-content">
-  <a href = "<?php the_permalink(); ?>" class="<?php _e( $post_type );?>">
+  <a class="article-link" href = "<?php the_permalink(); ?>" class="<?php _e( $post_type );?>">
     <h3 class="article-title"><?php echo $title; ?></h3>
   </a>
   <div class="article-date">

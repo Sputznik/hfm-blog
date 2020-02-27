@@ -67,22 +67,22 @@ add_shortcode('contact_links',function(){
   $icon_links = array(
     'linkedin' => array(
       'title' => 'Linkedin',
-      'url'   => 'http://www.google.com',
+      'url'   => 'https://www.linkedin.com/company/13007724/admin/',
       'icon'  => 'fa fa-linkedin'
     ),
     'youtube' => array(
       'title' => 'Youtube',
-      'url'   => 'http://www.google.com',
+      'url'   => 'https://www.youtube.com/channel/UCzpEIH1XeCBhlw54TDjiOOQ?view_as=subscriber',
       'icon'  => 'fa fa-youtube-play'
     ),
     'instagram' => array(
       'title' => 'Instagram',
-      'url'   => 'http://www.google.com',
+      'url'   => 'https://www.instagram.com/humanfactormedia/',
       'icon'  => 'fa fa-instagram'
     ),
     'facebook' => array(
       'title' => 'Facebook',
-      'url'   => 'http://www.google.com',
+      'url'   => 'https://www.facebook.com/TheHumanFactorMEDIA/?modal=admin_todo_tour',
       'icon'  => 'fa fa-facebook'
     ),
   );

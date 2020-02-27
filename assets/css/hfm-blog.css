@@ -166,6 +166,28 @@ color: #2e4857;
 }
 /* Footer Subscribe Section */
 
+/* Single post template */
+.single .entry-header .entry-title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.single .entry-content .excerpt{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.single .entry-content,
+.single .entry-content .main-content{ color: #262626; }
+.single .entry-content .main-content{ font-size: 19px; }
+.single .entry-meta{ margin-top: 40px; }
+.single .entry-meta .tags{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #b2b1b1;
+}
+/* Single post template */
+
 /* Orbit three column grid */
 @media (min-width: 769px){
   .article-list.three-list {

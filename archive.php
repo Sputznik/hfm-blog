@@ -15,6 +15,17 @@
         <?php endwhile; ?>
       </ul>
       <?php endif; ?>
+      <!-- Pagination -->
+      <?php
+        if( $wp_query->max_num_pages > 1 ){
+          the_posts_pagination( array(
+            'mid_size'  => 2,
+            'prev_text' => __( 'Previous', 'textdomain' ),
+            'next_text' => __( 'Next', 'textdomain' ),
+          ) );
+        }
+      ?>
+      <!-- Pagination -->
     </div>
   </div>
 </div>

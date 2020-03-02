@@ -30,14 +30,20 @@ add_shortcode( 'sidebar',function(){
 //Add google Comfortaa text font
 add_filter( 'sp_list_google_fonts', function( $fonts ){
 
-  // Josefin Sans similar to Brandon Grotesque
+  //Montserrat
   $fonts[] = array(
       'slug'	=> 'montserrat',
       'name'	=> 'Montserrat',
       'url'	  => 'Montserrat'
     );
+  //Noto Serif SC
+  $fonts[] = array(
+      'slug'	=> 'notoserif',
+      'name'	=> 'Noto Serif SC',
+      'url'	  => 'Noto+Serif+SC'
+  );
   return $fonts;
-} );
+});
 
 //Excerpt
 function excerpt( $limit ) {

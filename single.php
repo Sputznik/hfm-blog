@@ -1,7 +1,7 @@
 <?php get_header(); $flag = 0;?>
 <div class="container" style="margin-top: 80px;">
   <div class="row">
-    <div class="col-md-8"  style="padding-right: 20px;">
+    <div class="col-md-8"  style="padding-right: 30px;">
       <?php if( have_posts() ): while( have_posts() ) : the_post();?>
       <div class="entry-header text-center">
         <h1 class="entry-title"><?php the_title();?></h1>

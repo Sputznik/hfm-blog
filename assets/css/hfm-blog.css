@@ -31,7 +31,8 @@ color: #2e4857;
   border: 1px solid transparent;
   border-bottom-color: #b8b8b8;
 }
-.menu-explore-container ul > li:first-child{ border-left: 2px solid #f5b948;  }
+.menu-explore-container ul > li{ border-left: 2px solid transparent; }
+.menu-explore-container ul > li:hover{ border-left-color: #f5b948;  }
 .menu-explore-container ul > li > a{
   color: #262626;
   font-family: 'Noto Serif SC';

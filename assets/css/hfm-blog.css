@@ -1,6 +1,5 @@
 h3.explore{
 font-family: 'Montserrat';
-/* font-size: 28px; */
 color: #2e4857;
 }
 /* Add these styles to so-css*/
@@ -15,7 +14,7 @@ color: #2e4857;
 .menu-hfm-blog-container ul > li > a{
   color: #262626;
   font-family: 'Noto Serif SC';
-  font-size: 22px;
+  font-size: 20px;
   color: #ffffff;
 }
 
@@ -36,7 +35,7 @@ color: #2e4857;
 .menu-explore-container ul > li > a{
   color: #262626;
   font-family: 'Noto Serif SC';
-  font-size: 22px;
+  font-size: 20px;
 }
 .menu-explore-container ul > li > a:hover{ text-decoration: none;}
 .menu-explore-container ul > li > a:focus{ text-decoration: none; outline: none;}

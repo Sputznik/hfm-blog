@@ -16,7 +16,7 @@
       <?php if( has_category() ? $flag = 1 : $flag = 0 ):   ?>
       <div class="entry-meta">
         <span class="categories">
-          Tagged: <?php the_category(','); ?>
+          Tagged: <?php the_category(', '); ?>
         </span>
       </div>
       <?php endif;?>

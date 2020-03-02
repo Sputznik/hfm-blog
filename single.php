@@ -13,10 +13,10 @@
           <?php the_content();?>
         </div>
       </div>
-      <?php if( has_tag() ? $flag = 1 : $flag = 0 ):   ?>
+      <?php if( has_category() ? $flag = 1 : $flag = 0 ):   ?>
       <div class="entry-meta">
-        <span class="tags">
-          Tagged: <?php the_tags( '', ', ', '' );  ?>
+        <span class="categories">
+          Tagged: <?php the_category(','); ?>
         </span>
       </div>
       <?php endif;?>
@@ -38,7 +38,7 @@
   </div>
   <!-- Section display's posts having same post_tags -->
   <?php if( $flag ): ?>
-  <?php $html = do_shortcode( '[orbit_related_query taxonomy="post_tag" style="grid3" posts_per_page="-1"]' ); ?>
+  <?php $html = do_shortcode( '[orbit_related_query taxonomy="category" style="grid3" posts_per_page="-1"]' ); ?>
     <?php if( strlen( $html ) ):?>
     <div class="suggested-articles">
       <div class="row">

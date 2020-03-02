@@ -191,13 +191,20 @@ color: #2e4857;
 .single .entry-content .main-content img{ width: 100%;}
 .single .entry-content .main-content{ font-size: 19px; }
 .single .entry-meta{ margin-top: 40px; }
-.single .entry-meta .tags{
+.single .entry-meta .categories{
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
   color: #b2b1b1;
 }
+.single .entry-meta .categories .post-categories{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 /* Pagination */
 .article-pagination{ font-size: 16px; }
 .article-pagination .nav-previous a:before {

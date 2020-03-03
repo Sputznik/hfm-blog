@@ -161,6 +161,14 @@ color: #2e4857;
 .hbspt-form .hs_email .hs-error-msg{
   font-size: 15px;
 }
+.hs_error_rollup .hs-error-msgs {
+	margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.hs_error_rollup .hs-error-msgs .hs-main-font-element{
+	color: #ffffff;
+}
 /* Footer Subscribe Section */
 
 /* Single post template */

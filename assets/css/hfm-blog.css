@@ -2,11 +2,6 @@ h3.explore{
 font-family: 'Montserrat';
 color: #2e4857;
 }
-/* Add these styles to so-css*/
-#manifesto p{
-  line-height: 1.5;
-  font-size: 18px;
-}
 
 .menu-explore-categories-container ul,
 .menu-hfm-blog-container ul{ list-style-type: none; padding: 0; }
@@ -18,8 +13,6 @@ color: #2e4857;
   color: #ffffff;
 }
 
-/* Add these styles to so-css*/
-.widget-title{ margin-bottom: 25px; }
 .menu-explore-container ul{
   list-style-type: none;
   padding: 0;

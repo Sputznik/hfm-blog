@@ -104,3 +104,9 @@ add_shortcode('contact_links',function(){
   return ob_get_clean();
 
 });
+
+
+add_filter( 'sp_logo_url', function( $url ){
+    $url = "https://humanfactormedia.co/";
+    return $url;
+} );

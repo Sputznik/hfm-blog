@@ -3,16 +3,7 @@
   <div class="row">
     <div class="col-md-8"  style="padding-right: 30px;">
       <?php if( have_posts() ): while( have_posts() ) : the_post();?>
-      <div class="entry-header text-center">
-        <h1 class="entry-title"><?php the_title();?></h1>
-      </div>
-      <div class="entry-content">
-        <p class="excerpt text-center"><em><?php echo excerpt(30);?></em></p>
-        <div class="article-decoration"></div>
-        <div class="main-content">
-          <?php the_content();?>
-        </div>
-      </div>
+      <?php get_template_part( 'partials/single', 'post' );?>
       <?php if( has_category() ? $flag = 1 : $flag = 0 ):   ?>
       <div class="entry-meta">
         <span class="categories">

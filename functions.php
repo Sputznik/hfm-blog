@@ -107,6 +107,6 @@ add_shortcode('contact_links',function(){
 
 
 add_filter( 'sp_logo_url', function( $url ){
-    $url = "https://humanfactormedia.co/";
+    $url = "https://thenewwriters.blog/";
     return $url;
 } );

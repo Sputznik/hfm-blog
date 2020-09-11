@@ -116,16 +116,24 @@ color: #2e4857;
   color: #fff;
 }
 
+/* HEADER 3 */
+
+/* Ovverride default BS3 styles */
+.navbar { min-height: 130px; margin-bottom: 0;}
+
+.navbar-brand { height: 130px; line-height: 130px;}
+
 /* Logo */
-.header3 .logo img{
-  max-width: 50px;
-  width: 100%;
-}
-.header3 .navbar-default .navbar-brand{
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+.header3 .logo { max-width: 240px;}
+.header3 .logo img{ max-width: 240px; width: 100%;}
 /* Logo */
+
+.navbar-toggle {
+  /* (130px - button height 34px) / 2 = 48px */
+  margin-top: 48px;
+  padding: 9px 10px !important;
+}
+/* HEADER 3 */
 
 /* Footer Subscribe Section */
 .hbspt-form .actions input[type=submit] {
@@ -367,23 +375,42 @@ nav.navigation.pagination .page-numbers.next {
 .orbit-single-post :last-child::after{ background-color: transparent; margin: 10px auto; }
 /* Author Info */
 
-/* Orbit three column grid */
 @media (min-width: 769px){
+  /* Orbit three column grid */
   .article-list.three-list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
     display: grid;
   }
+  /* Orbit three column grid */
+  /* HEADER 3 */
+  .navbar>.container .navbar-brand{ margin-left: -40px;}
+  .navbar-nav > li > a {
+    /* (130px - line-height of 27px) / 2 = 51.5px */
+    margin-top: 51.5px;
+    margin-bottom: 51.5px;
+    line-height: 27px;
+  }
+  .navbar-brand{ padding-top: 14px !important;}
+  .header3{ margin-bottom: 130px;}
+  /* HEADER 3 */
+}
+@media only screen and (max-width: 768px) and (min-width: 768px){
+  .navbar>.container .navbar-brand{
+    margin-left: 0 !important;
+    padding-top: 8px;
+    padding-left: 0;
+  }
 }
 @media( max-width: 768px ){
   .article-list.three-list .orbit-article{ margin-bottom: 30px;}
-  /* logo */
-  .header3 .navbar-default .navbar-brand{
-    padding-top: 8px;
+  /* HEADER 3 */
+  .navbar>.container .navbar-brand{
     padding-bottom: 8px;
+    padding-top: 0;
+    margin-top: -5px;
   }
-  /* logo */
-}
-@media only screen and (max-width: 768px) and (min-width: 768px){
-  .navbar>.container .navbar-brand{ margin-left: 0; }
+  .header3{ margin-bottom: 65px;}
+  .navbar>.container .navbar-brand{ margin-left: -12%; }
+  /* HEADER 3 */
 }
